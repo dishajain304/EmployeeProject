@@ -1,37 +1,41 @@
 package com.training.bean;
 
+import java.util.Iterator;
+
 public class User {
-	private int userId;
-	private String userName;
-	private String userEmail;
+	private int empId;
+	private String empName;
+	private String empEmail;
 	
-	public int getUserId() {
-		return userId;
+	
+	public int getEmpId() {
+		return empId;
 	}
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setEmpId(int empId) {
+		this.empId = empId;
 	}
-	public String getUserName() {
-		return userName;
+	public String getEmpName() {
+		return empName;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setEmpName(String empName) {
+		this.empName = empName;
 	}
-	public String getUserEmail() {
-		return userEmail;
+	public String getEmpEmail() {
+		return empEmail;
 	}
-	public void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
+	public void setEmpEmail(String empEmail) {
+		this.empEmail = empEmail;
 	}
+	
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + "]";
+		return "\t "+empId+"\t "+empName+"\t\t "+empEmail;
 	}
-	public User(int userId, String userName, String userEmail) {
+	public User(int empId, String empName, String empEmail) {
 		super();
-		this.userId = userId;
-		this.userName = userName;
-		this.userEmail = userEmail;
+		this.empId = empId;
+		this.empName = empName;
+		this.empEmail = empEmail;
 	}
 	public User() {
 		//default constructor
